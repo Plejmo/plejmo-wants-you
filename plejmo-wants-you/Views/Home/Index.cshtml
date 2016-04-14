@@ -1,0 +1,33 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highest Rated Movies</title>
+</head>
+<body>
+    <h1 style="font-family: Verdana;">Highest Rated Movies</h1>
+    <table>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td style="font-family: Verdana;">@movie.Title</td>
+                <td style="font-family: Verdana;">@movie.AverageRating</td>
+            </tr>
+        }
+    </table>
+    <form method="POST">
+        <b>Movie:</b><br /><select name="title">
+            @foreach (var movie in Model)
+            {
+                <option value="@movie.Title">@movie.Title</option>
+            }
+        </select><br/><br/>
+        <b>Your Rating:</b><br /><input type="text" name="rating" /><br /><br />
+        <strong>Your User Id:</strong><br /><input type="text" name="userId" /><br /><br />
+        <button>Rate Movie</button>
+    </form>
+</body>
+</html>
