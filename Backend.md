@@ -11,7 +11,7 @@ Your mission, should you choose to accept it, is to resolve the issues, refactor
 ## Issues
 * It should not be possible to give a movie a rating less than 1 or greater than 5. There's currently no restrictions at all.
 * Only registered and logged on users should be able to rate movies.
-* You should not have to enter your user id when rating a movie.
+* The product owner wants a simpler way of rating movies. Something along the lines of a set of radio buttons next to each movie.
 * The users have complained that it is annoying that the browser reloads the page when rating movies.
 
 ## Rest Api Requirements
@@ -29,6 +29,7 @@ Your mission, should you choose to accept it, is to resolve the issues, refactor
 * Quality code is tested code. Your solution should contain some sort of tests that verify that the code works as expected. It should be possible to run these tests from within Visual Studio.
 * It should be possible to start the solution from within Visual Studio - there should be no manual configuration or installation involved.
 * The use of NuGet is encouraged.
+* Since this is for a backend developer position you don't have to make the site look pretty (you can if you feel like it of course).
 
 ## What does the initial solution contain?
 The solution contains the project "plejmo-wants-you" which is what you will be working on in this assignment.
